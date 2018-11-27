@@ -8,7 +8,8 @@ before_install:
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
-  - conda env create -n travis -f environment.yml
+  - conda env create -f environment.yml
+  - conda activate travis
   - mkdir build install
   
 install:

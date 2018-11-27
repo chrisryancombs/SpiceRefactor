@@ -8,3 +8,10 @@ before_install:
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
+  - conda create env -python=3.6
+  - mkdir build install
+  
+install:
+  - cd install
+  - cmake -GNinja
+  - ninja install 

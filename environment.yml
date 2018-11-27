@@ -1,0 +1,6 @@
+channels:
+  - usgs-astrogeology
+  - conda-forge
+  
+dependencies:
+  - cmake>=3.10

@@ -1,0 +1,5 @@
+language: cpp
+compiler: gcc
+
+before_install:
+  - ls
